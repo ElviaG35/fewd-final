@@ -1,0 +1,100 @@
+.booking{
+min-height: 80px;
+background-color:black;
+margin:0%;
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: auto;
+}
+
+
+.booking-list {
+  display: flex;
+  justify-content: center;
+}
+
+svg {
+  display:inline-flex;
+  height: auto;
+  max-width: 100%;
+}
+
+.booking {
+  padding-bottom: 5.625rem;
+}
+
+.booking ul {
+  margin: 2rem 0;
+  list-style: none;
+}
+
+.booking ul li {
+  max-width: calc(33% - (1.25rem * 2));
+  text-align: center;
+}
+
+.booking ul li:not(:last-of-type) {
+  margin-right: 1.25rem;
+}
+
+ p {
+  color: var(--lighter-text);
+}
+
+
+
+.booking h2 {
+color: white;
+font-size: x-large;
+margin: 0% auto;
+padding-top: 2.5rem;
+}
+
+
+
+ h3{
+  color: white;
+  font-size:medium;
+}
+
+
+ p{
+  color: white;
+  font-size:medium;
+  text-align: center;
+}
+
+.button{
+background-color: var(--yellow);
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+.booking{
+  background-color: var(--gobblet-green);
+  display:block;
+
+}
+.booking-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3.75rem;
+
+}
+p{
+  display: none;
+}
+.button{
+  display: flex;
+  align-self: center;
+}
+
+svg {
+  display:block;
+}
+}
