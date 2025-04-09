@@ -1,0 +1,138 @@
+header .content-wrapper {
+  display: flex;
+  max-height: 90px;
+  padding: 0 1.25rem;
+  margin: 0;
+}
+
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: rgb(90, 89, 89);
+}
+
+header ul {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  justify-content:flex-end;
+}
+
+header ul div {
+  display:flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+header li:not(:last-of-type) {
+  margin-right: 2.25rem;
+}
+
+img{
+  width: 180px;
+}
+
+header picture {
+  width: 100%;
+  margin-right: 1.25rem;
+}
+
+header a {
+  color:var(--gun-gray);
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+header a:hover {
+  color:black;
+  font-weight:600;
+ 
+}
+
+.hamburger {
+  display: none;
+  appearance: none;
+  border-radius: var(--radius);
+  background-color: transparent;
+  border: var(--border-line);
+}
+
+
+.hamburger-button{
+display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+  body{
+    position: relative;
+    overflow-x:hidden;
+  }
+
+  header .content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gobblet-green);
+  }
+
+  header .navMenu {
+    display: none;
+  }
+
+  .hamburger-list a {
+    color:white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    gap: 10px;
+  }
+  
+  .hamburger a:hover {
+    color:black;
+    font-weight:600;
+   
+  }
+  .hamburger-list {
+    list-style: none;
+  }
+
+  
+
+  .hamburger-button{
+  display: block;
+  background-color: white;
+  max-width: 60px;
+  padding: 0%;
+  margin: 0%;
+  }
+
+  .hamburger{
+    margin: 0;
+    display: block;
+    background-color: var(--gobblet-green);
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    top:0;
+    bottom:0;
+    right: -300px;
+    max-height: 400px;
+  }
+
+ body.menu-open{
+  menu{
+    transform: translateX(-300px);
+  }
+ }
+
+  .content-wrapper img{
+    width: 120px;
+    border: 1px solid var(--gobblet-green);
+  }
+
+}
