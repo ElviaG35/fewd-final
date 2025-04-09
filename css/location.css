@@ -1,0 +1,60 @@
+.location{
+min-height: 650px;
+background-image: url(../images/hollywwod\ sign.jpg);
+background-color: rgba(255,255,255,0.3);
+background-blend-mode: lighten;
+background-repeat: no-repeat;
+background-position: top;
+background-size:cover;
+margin-top: 0%;
+margin:0% auto;
+padding-top: 20px;
+}
+
+.location-wrapper{
+display: flex;
+align-items: center;
+justify-content:space-around;
+
+}
+
+.map{
+min-width: 50%;
+display: flex;
+justify-content: center;
+padding-top: 2.5rem;
+}
+
+.directions{
+min-width:50%;
+display: block;
+text-align: center;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.location h2{
+color:var(--gun-gray);
+font-size: 1.5rem;
+font-weight: 800;
+}
+
+.location p{
+color:rgb(51, 50, 50);
+font-size: 1.25rem;
+font-weight: 800;
+}
+
+
+    @media screen and (max-width: 800px) {
+.directions{
+    display: none;
+}
+
+.map{
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    }
+    }s

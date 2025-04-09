@@ -1,0 +1,79 @@
+.hero {
+background-image: url(../images/Summer\ exotic.jpeg);
+min-height: 800px;
+background-repeat: no-repeat;
+background-position: top;
+background-size:cover;
+display: flex;
+justify-items: center;
+padding:30px;
+text-align: center;
+}
+  
+.content-wrapper {
+width: 100%;
+}
+  
+.hero h1 {
+font-size: 5rem;
+color: rgb(252, 233, 3);
+font-family:bangers;
+letter-spacing: 0.25rem;
+text-shadow: 4px 4px 8px white;
+-webkit-text-stroke: 0.05px black;
+margin-bottom: 0%;
+}
+  
+.hero h2 {
+font-size: 2rem;
+color: var(--gun-gray);
+font-family:oxygen;
+margin: 0 auto;
+padding: .50rem 1rem;
+}
+
+.hero label{
+font-weight: 600;
+font-family: oxgen;
+font-size: 1.25rem;
+color: var(--gun-gray);
+padding: 0 auto;
+}
+
+form {
+margin-bottom: 0.5rem;
+}
+
+ button{
+color:var(--gun-gray);
+background-color: var(--sunyellow);
+width: 225px;
+padding: .50rem;
+font-weight: 600;
+margin-top: 0.5rem;
+}
+
+  
+@media screen and (max-width: 800px) {
+.hero
+  {
+background-image: unset;
+min-height: unset;
+}
+  
+.hero .content-wrapper > div {
+ width: 100%;
+}
+  
+.hero h1 {
+display: none;
+}
+  
+  
+.hero button {
+max-width: unset;
+background-color: var(--gobblet-green);
+color: white;
+margin: 1.25rem 1.25rem;
+}
+}

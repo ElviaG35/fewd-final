@@ -1,0 +1,135 @@
+.featured-rides {
+background-image: url(../images/corousel\ background.jpg);
+background-color: rgba(255,255,255,0.4);
+background-blend-mode: lighten;
+min-height: 650px;
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.slider-wrapper {
+position:relative;
+max-width: 60%;
+max-height: 70%;
+margin: 0 auto;
+display: flex;
+margin-top: 10px;
+flex-direction: column;
+justify-self: center;
+::-webkit-scrollbar {
+  display: none;
+}
+}
+
+
+.slider {
+display: flex;
+aspect-ratio: 16/9;
+overflow: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%,  0.25);
+border-radius: 0.5rem;
+min-width:100%;
+}
+
+.slider img{
+flex: 1 0 100%;
+scroll-snap-align: start;
+object-fit:cover;
+}
+
+.slider-nav {
+display: flex;
+column-gap: 1rem;
+position: absolute;
+bottom: 1.25rem;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;
+}
+
+
+.slider-nav a {
+  width: 1rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color:white;
+  opacity: 0.75;
+  transition:opacity ease 250ms;
+}
+
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+
+.featured-rides h2{
+display: block;
+font-size: 2.5rem;
+font-weight: 900;
+color:var(--gun-gray);
+font-family:oxygen;
+margin-top: 0%;
+padding-top:3px;
+}
+
+.featured-rides p{
+color: white;
+font-size: 1.5rem;
+text-align: center;
+padding: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .featured-rides
+ {
+    background-image: unset;
+    background-color:var(--gobblet-green);
+    min-height: unset;
+  }
+
+  .featured-rides .content-wrapper > div {
+    width: 100%;
+  }
+
+  .featured-rides h2 {
+  font-size: 1.5rem;
+  color:var(--gun-gray);
+  font-family:oxygen;
+  margin: 0;
+  padding: 1rem;
+  }
+
+  .slider-wrapper {
+    position:relative;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    flex-direction: column;
+    justify-self: center;
+    padding: auto;
+  }
+  .featured-rides h2{
+    font-size: 1.5rem;
+    color:white;
+    font-family:oxygen;
+    margin: 0;
+    padding: 2rem;
+  }
+
+  .slider-wrapper p{
+    color: var(--gun-gray);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 2rem 2rem;
+  }
+
+}

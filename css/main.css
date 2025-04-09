@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --base-space: 1.25rem;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0 var(--base-space);
+    font-size: 100%;
+    overflow-x: hidden;
+  }
+  
+  label {
+    margin-bottom: 0.25rem;
+  }
+  
+  input {
+    margin-bottom: var(--base-space);
+  }
+  
+
